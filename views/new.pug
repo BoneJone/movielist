@@ -1,4 +1,21 @@
 extends layout
 
 block content
-  h1 Tee uusi elokuvalista!
+  div(class="main container")
+    div(class="ui container")
+      h1(class="ui header") Add New Movie!
+      form(class="ui form")
+        div(class="field")
+          label Movie
+          input(type="text" name="movie-name" placeholder="Movie Name")
+        div(class="field")
+          label Rating
+          input(type="number" name="rating" min="1" max="10")
+        div(class="field")
+          label Watched
+          input(type="date" name="watched")
+        div(class="field")
+          label Comment
+          textarea(rows="5")
+        button(class="ui button" type="submit") Submit
+    
